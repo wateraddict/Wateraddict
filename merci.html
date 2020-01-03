@@ -1,0 +1,1861 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>디자인위브</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"/>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="csrf-token" content="MTU3NDMyMDA0NTQyMzgxNjgzMjkxMDQyMzA3MzYwMzc0Mjg3Njk5Mzc5" />
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="디자인위브">
+    <meta property="og:url" content="http://sampleimarketing225.godomall.com/main/index.php">
+    <meta property="og:description" content="디자인위브">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="디자인위브">
+    <meta name="twitter:description" content="디자인위브">
+
+
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/reset.css?ts=1564984538">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/common/common.css?ts=1564984538">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/common/layer/layer.css?ts=1564984538">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/layout/layout.css?ts=1564984538">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/goods/list.css?ts=1564984538">
+	<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/button.css?ts=1564984538">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/main/main.css?ts=1564984538" />
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/js/jquery/chosen/chosen.css?ts=1564984538" />
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/css/custom.css?ts=1564984538" />
+
+
+    <!-- 디자인위브 추가 -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/wib-module.css?ts=1570149042" />
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/wib-setting.css?ts=1569328035" />
+	<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/wib-common-pc.css?ts=1570494403" />
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/wib-common-mobile.css?ts=1570148302" />
+	<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/wib-sub-pc.css?ts=1570414312" />
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/wib-sub-mobile.css?ts=1570414321" />
+	<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/swiper.css?ts=1565158835" />
+	<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/slick.css?ts=1564984952" />
+	<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/animate.css?ts=1569544781" />
+	<!-- //디자인위브 추가 -->
+
+    <script type="text/javascript">
+        var json_locale_data = {"domain":"messages","locale_data":{"messages":{"":{"lang":"ATF","plural-forms":"nplurals=1; plural=0"}}}}
+    </script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/gd_gettext.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/jquery/jquery.min.js?ts=1573623230"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/underscore/underscore-min.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/jquery/validation/jquery.validate.min.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/jquery/validation/additional-methods.min.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/numeral/numeral.min.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/global/accounting.min.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/global/money.min.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/jquery/chosen/chosen.jquery.min.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/jquery/placeholder/placeholders.jquery.min.js?ts=1564984538"></script>
+    <![if gt IE 8]>
+    <script type="text/javascript" src="/data/skin/front/my10/js/copyclipboard/clipboard.min.js?ts=1564984538"></script>
+    <![endif]>
+    <script type="text/javascript" src="/data/skin/front/my10/js/jquery/vticker/jquery.vticker.js?ts=1564984538"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/gd_ui.js?ts=1564984538"></script>
+
+    <script type="text/javascript">
+        // 고도몰5 통화정책
+        var gdCurrencyDecimal = 0;
+        var gdCurrencyDecimalFormat = '0';
+        var gdCurrencyCode = 'KRW';
+        var gdCurrencyAddDecimal = 0;
+        var gdCurrencyAddDecimalFormat = '';
+        var gdCurrencyAddCode = '';
+        var gdLocale = 'ko';
+        var gdCurrencySymbol = '￦';
+        var gdCurrencyString = '';
+
+        // 환율변환 정책
+        fx.base = "KRW";
+        fx.settings = {
+            from : "KRW",
+            to : gdCurrencyCode
+        };
+        fx.rates = {
+            "KRW" : 1,
+            "USD" : 0,
+            "CNY" : 0,
+            "JPY" : 0,
+            "EUR" : 0,
+        }
+    </script>
+
+    <script type="text/javascript" src="/data/skin/front/my10/js/gd_common.js?ts=1564984538"></script>
+
+    <!-- Add script : start -->
+    <script type="text/javascript" src="/data/skin/front/my10/js/jquery/jquery-cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/js/gd_popup.js"></script>
+    <!-- Add script : end -->
+
+
+
+    <!-- 디자인위브 추가 -->
+    <script type="text/javascript" src="/data/skin/front/my10/wib/js/wib-sub.js?ts=1564997586"></script>
+    <script type="text/javascript" src="/data/skin/front/my10/wib/js/wib-common.js?ts=1573622960"></script>
+	<script type="text/javascript" src="/data/skin/front/my10/wib/js/rotatecompressed.js?ts=1565004943"></script>
+	<script type="text/javascript" src="/data/skin/front/my10/wib/js/swiper.min.js?ts=1565158825"></script>
+	<script type="text/javascript" src="/data/skin/front/my10/wib/js/slick-animation.js?ts=1565332810"></script>
+	<script type="text/javascript" src="/data/skin/front/my10/wib/js/slick.min.js?ts=1564987887"></script>
+	<!-- //디자인위브 추가 -->
+
+    <style type="text/css">
+        body {
+        }
+
+        /* body > #wrap > #header_warp : 상단 영역 */
+        #header_warp {
+        }
+
+        /* body > #wrap > #container : 메인 영역 */
+        #container {
+        }
+
+        /* body > #wrap > #footer_wrap : 하단 영역 */
+        #footer_wrap {
+        }
+    </style>
+
+
+
+</head>
+
+<body class="body-main body-index pc"  >
+<div class="top_area"></div>
+<div id="wrap">
+
+    <div id="header_warp">
+<div class="header">
+	<div class="header_inner">
+		<div class="header_container clearfix">
+			<!-- 공통 로고 -->
+			<div class="logo pull-left"><a href="../main/index.php"><img src="/data/skin/front/my10/img/banner/1cf2b8fb862a742556eb4ef7f78e8cc6_33369.png" alt="" /></a></div>
+
+			<!-- 메인 로고 -->
+			<div class="logo main pull-left"><a href="../main/index.php"><img src="/data/skin/front/my10/img/banner/94340891a645eae992b97409f3c50e75_47199.png" alt="" /></a></div>
+
+			<!-- login menu -->
+			<div class="right-menu pull-right">
+				<ul class="inline">
+					<li class="line-from-center"><a href="../member/login.php">LOGIN</a></li>
+					<li class="line-from-center"><a href="../member/join_method.php">JOIN</a></li>
+
+					<li class="line-from-center"><a href="../order/cart.php">CART(0)</a></li>
+					<li class="line-from-center"><a class="btn-search-open" href="#">SEARCH</a></li>
+
+					<!-- 멀티상점 선택 -->
+
+					<!-- 멀티상점 선택 -->
+				</ul>
+
+				<!-- 모바일용 우측 카테고리 -->
+				<div class="inline">
+					<a class="m-search" href="#"></a>
+					<a class="m-side" href="#"></a>
+				</div>
+			</div>
+			<!-- //login menu -->
+		</div>
+
+        <div class="category-wrap swiper_off">
+            <!-- 상단 카테고리 출력 시작 -->
+            <div class="swiper-nav">
+	<ul class="depth0 gnb_menu0 inline">
+		<!-- 상품 카테고리 자동연동 영역 : 관리자 > 카테고리 관리에 생성하신 1차 대분류가 노출됩니다. -->
+		<li class="line-from-center" >
+			<a href="../goods/goods_list.php?cateCd=001" >LIMIT SERIES</a>
+		</li>
+		<li class="line-from-center" >
+			<a href="../goods/goods_list.php?cateCd=002" >SPORTS SERIES</a>
+		</li>
+		<li class="line-from-center" >
+			<a href="../goods/goods_list.php?cateCd=003" >LEISURE SERIES</a>
+		</li>
+		<!-- //상품 카테고리 자동연동 영역 -->
+
+		<!-- 개별 및 게시판 수동 링크영역 -->
+		<!--* 수동카테고리 생성시 <li>~</li> 복사 후 붙여넣은 후 링크변경해주시면 됩니다. *-->
+		<li class="line-from-center">
+			<a href="/service/company.php">BRAND</a>
+		</li>
+		<li class="line-from-center">
+			<a href="/board/list.php?bdId=goodsqa">CONTACT US</a>
+		</li>
+		<!-- //개별 및 게시판 수동 링크영역 -->
+	</ul>
+</div>
+            <!-- 상단 카테고리 출력 끝 -->
+        </div>
+	</div>
+</div>
+
+
+<!-- 모바일용 사이드 메뉴 -->
+<div class="aside easing-three">
+    <div class="aside-inner">
+        <!-- 로그인/로그아웃 캡션 -->
+        <div class="aside-caption text-center">
+            <p>고객님께서는 현재 <span>'로그아웃'</span> 상태입니다.<br>로그인 하시면 더욱 많은 정보와 혜택이 기다리고 있습니다.</p>
+        </div>
+        <!--// 로그인/로그아웃 캡션 -->
+        <!-- 로그인 버튼 -->
+        <div class="aside-login inline text-center">
+            <a href="../member/login.php" class="bg">LOGIN</a>
+            <a href="../member/join_method.php">JOIN</a>
+        </div>
+        <!--// 로그인 버튼 -->
+        <!-- 퀵메뉴 -->
+        <div class="aside-quick">
+            <ul class="inline text-center">
+                <li class="order"><a href="../mypage/order_list.php">주문조회</a></li>
+                <li class="today"><a href="../order/cart.php">장바구니</a></li>
+                <li class="wish"><a href="../mypage/wish_list.php">찜리스트</a></li>
+            </ul>
+        </div>
+        <!--// 퀵메뉴 -->
+        <!-- 탭 카테고리 -->
+        <div class="tab-category">
+            <div class="tab-menu">
+                <ul class="inline text-center">
+                    <li class="on"><a href="#" onclick="return false;">CATEGORY</a></li>
+                    <li><a href="#" onclick="return false;">BRAND</a></li>
+                    <li><a href="#" onclick="return false;">BOARD</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <!-- 상품 카테고리 -->
+                <div class="prd-cate content-box on"><div class="sub_menu_box _type"><!-- N : 레이어 타입 : layer_type 추가, 트리형 타입 tree_type 추가 -->
+    <ul class="depth-one-wrap">
+        <li class="depth-one" >
+            <a href="../goods/goods_list.php?cateCd=001" >LIMIT SERIES</a>
+            <span class="arrow"></span>
+            <ul class="depth-two-wrap">
+                <li class="depth-two" >
+                    <a href="../goods/goods_list.php?cateCd=001001" class="no-child">MENU01</a>
+                </li>
+                <li class="depth-two" >
+                    <a href="../goods/goods_list.php?cateCd=001002" class="no-child">MENU02</a>
+                </li>
+                <li class="depth-two" >
+                    <a href="../goods/goods_list.php?cateCd=001003" class="no-child">MENU03</a>
+                </li>
+                <li class="depth-two" >
+                    <a href="../goods/goods_list.php?cateCd=001004" class="no-child">MENU04</a>
+                </li>
+            </ul>
+        </li>
+        <li class="depth-one" >
+            <a href="../goods/goods_list.php?cateCd=002" class="no-child">SPORTS SERIES</a>
+        </li>
+        <li class="depth-one" >
+            <a href="../goods/goods_list.php?cateCd=003" class="no-child">LEISURE SERIES</a>
+        </li>
+    </ul>
+</div>
+<!-- //sub_menu_box --></div>
+                <!--// 상품 카테고리 -->
+                <!-- 브랜드 카테고리 -->
+                <div class="prd-cate content-box"><div class="sub_menu_box _type"><!-- N : 레이어 타입 : layer_type 추가, 트리형 타입 tree_type 추가 -->
+    <ul class="depth-one-wrap">
+    </ul>
+</div>
+<!-- //sub_menu_box --></div>
+                <!--// 브랜드 카테고리 -->
+                <!-- 게시판 카테고리 -->
+                <div class="prd-cate content-box">
+                    <ul class="depth-one-wrap">
+                        <li class="depth-one"><a href="/board/list.php?bdId=notice" class="no-child">공지사항</a></li>
+                        <li class="depth-one"><a href="/board/list.php?bdId=event" class="no-child">이벤트</a></li>
+                        <li class="depth-one"><a href="/board/list.php?bdId=goodsreview" class="no-child">상품후기</a></li>
+                        <li class="depth-one"><a href="/board/list.php?bdId=goodsqa" class="no-child">상품문의</a></li>
+                        <li class="depth-one"><a href="/service/faq.php" class="no-child">FAQ</a></li>
+                    </ul>
+                </div>
+                <!--// 게시판 카테고리 -->
+            </div>
+        </div>
+        <!--// 탭 카테고리 -->
+    </div>
+</div>
+<a href="#" class="btn-side-close easing-three" onclick="return false;">
+    <span></span>
+    <span></span>
+</a>
+<div class="aside-bg easing-three"></div>
+<!--// 모바일용 사이드 메뉴 -->
+
+
+<div class="search-mask"></div>
+<!-- 검색 폼 -->
+<div class="search-wrap">
+    <div class="search-container">
+        <div class="search-inner">
+            <div class="search-title">
+                <h2>SEARCH</h2>
+                <p>검색어를 입력하세요.</p>
+            </div>
+            <form name="frmSearchTop" id="frmSearchTop" action="../goods/goods_search.php" method="get">
+                <fieldset>
+                    <!-- <legend>검색폼</legend> -->
+                    <div class="search-input-wrap">
+                        <input type="text" id="search-form" name="keyword" class="top_srarch_text" title=""  placeholder="" autocomplete="off">
+                        <input type="image" src="/data/skin/front/my10/wib/img/common/wt-search-icon.png" id="btnSearchTop" class="btn_top_srarch" title="검색" value="검색" alt="검색">
+
+                        <div class="search-area" style="display:none;">
+                            <input type="hidden" name="recentCount" value="10" />
+
+
+                            <!-- //recom_box -->
+
+                            <div class="recent_box">
+                                <dl class="js_recent_area">
+                                    <dt>최근검색어</dt>
+                                    <dd>최근 검색어가 없습니다.</dd>
+                                </dl>
+                            </div>
+                            <!-- //recent_box -->
+                            <div class="seach_top_all">
+                                <button type="button" class="btn_top_search_close"><strong>닫기</strong></button>
+                            </div>
+                            <!-- //seach_top_all -->
+
+                        </div>
+                        <!-- //search_cont -->
+                    </div>
+                    <!-- //top_search_cont -->
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- //top_search -->
+<!-- 검색 폼 -->
+    </div>
+    <!-- //header_warp -->
+
+    <div id="container">
+        <div id="contents">
+        <!-- 본문 시작 -->
+
+            <!-- //location_wrap -->
+
+            <div class="sub_content">
+
+                <!-- //side_cont -->
+
+
+<!-- 디자인위브 추가 -->
+<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/animate.css" />
+<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/jquery.simplyscroll.css" />
+<link type="text/css" rel="stylesheet" href="/data/skin/front/my10/wib/css/wib-main.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript" src="/data/skin/front/my10/wib/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="/data/skin/front/my10/wib/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="/data/skin/front/my10/wib/js/imagesloaded.js"></script>
+<script type="text/javascript" src="/data/skin/front/my10/wib/js/classie.js"></script>
+<script type="text/javascript" src="/data/skin/front/my10/wib/js/AnimOnScroll.js"></script>
+<script type="text/javascript" src="/data/skin/front/my10/wib/js/jquery.simplyscroll.min.js"></script>
+<script type="text/javascript" src="/data/skin/front/my10/wib/js/wib-main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- //디자인위브 추가 -->
+
+
+<!-- 메인 슬라이드 배너 (PC) -->
+<div class="main-slide-wrap pc_mainslider">
+	<div class="main-slider">
+		<!--------- 노출 배너 개수에 맞춰 slide 추가/삭제해주세요. --------->
+		<!-- slide 1 : 슬라이드 배너 1 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/f263d63c10033076f8cb2f44a0052dec_89447.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="flipInX" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="flipInX" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target="" class="tit-3 animated" data-animation-in="fadeInUp" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 1 : 슬라이드 배너 1 -->
+
+		<!-- slide 2 : 슬라이드 배너 2 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/2f00c55bacee1a3946551f6e0fce1b33_40083.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="fadeInDown" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="fadeInDown" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target="" class="tit-3 animated" data-animation-in="fadeInUp" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 2 : 슬라이드 배너 2 -->
+
+		<!-- slide 3 : 슬라이드 배너 3 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/f263d63c10033076f8cb2f44a0052dec_32962.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="flipInX" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="flipInX" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target=""  class="tit-3 animated" data-animation-in="fadeInUp" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 3 : 슬라이드 배너 3 -->
+
+		<!-- slide 4 : 슬라이드 배너 4 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/2f00c55bacee1a3946551f6e0fce1b33_35309.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="fadeInDown" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="fadeInDown" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target=""  class="tit-3 animated" data-animation-in="fadeInUp" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 4 : 슬라이드 배너 4 -->
+	</div>
+</div>
+<!-- //메인 슬라이드 배너 (PC) -->
+
+
+<!-- 메인 슬라이드 배너 (MOBILE) -->
+<div class="main-slide-wrap m_mainslider">
+	<div class="main-slider">
+		<!--------- 노출 배너 개수에 맞춰 slide 추가/삭제해주세요. --------->
+		<!-- slide 1 : 슬라이드 배너 1 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/98b9f42a6a4011053f074df97909ed41_93981.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="flipInX" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="flipInX" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target="" class="tit-3 animated" data-animation-in="flipInX" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 1 : 슬라이드 배너 1 -->
+
+		<!-- slide 2 : 슬라이드 배너 2 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/98b9f42a6a4011053f074df97909ed41_43941.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="flipInX" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="flipInX" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target="" class="tit-3 animated" data-animation-in="flipInX" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 2 : 슬라이드 배너 2 -->
+
+		<!-- slide 3 : 슬라이드 배너 3 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/98b9f42a6a4011053f074df97909ed41_51466.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="flipInX" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="flipInX" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target="" class="tit-3 animated" data-animation-in="flipInX" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 3 : 슬라이드 배너 3 -->
+
+		<!-- slide 4 : 슬라이드 배너 4 -->
+		<div class="slide">
+			<div class="slide-img">
+				<img src="/data/skin/front/my10/img/banner/98b9f42a6a4011053f074df97909ed41_41889.jpg" alt="" />
+			</div>
+			<div class="slide-txt">
+				<div class="txt-wrap">
+					<p class="tit-1 animated" data-animation-in="flipInX" data-delay-in="0.3">MATCHES BIKE</p>
+					<p class="tit-2 tanimated" data-animation-in="flipInX" data-delay-in="0.5">THE BIKE POINT OF VIEW</p>
+					<a href="#" target="" class="tit-3 animated" data-animation-in="flipInX" data-delay-in="0.7">MORE <span>+</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //slide 4 : 슬라이드 배너 4 -->
+	</div>
+</div>
+<!-- //메인 슬라이드 배너 (MOBILE) -->
+
+
+<div class="main_content">
+	<!-- section01 : 메인 상품 진열 -->
+	<div class="section01 main-lr">
+		<div class="inner">
+			<div class="circle-rotate">
+				<img src="/data/skin/front/my10/wib/img/common/rotate-img.png" id="image">
+			</div>
+			<div class="prd-wrap">
+
+<div class="goods_list main_wrap_1">
+    <div class="goods_list_tit">
+        <h3>NEW ITEM</h3>
+    </div>
+    <div class="goods_list_cont goods_content_1">
+<div class="item_basket_type item-wrap">
+    <ul class="item-list">
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000022&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000022/1000000000_main_071.jpg" width="530" alt="Classic R-21/21단 트랙바_확인용" title="Classic R-21/21단 트랙바_확인용" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000022&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">Classic R-21/21단 트랙바_확인용</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000022">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000021&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000021/1000000000_main_071.jpg" width="530" alt="New 2019 R-21/21단 트랙바" title="New 2019 R-21/21단 트랙바" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000021&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 2019 R-21/21단 트랙바</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000021">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000020&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000020/1000000000_main_071.jpg" width="530" alt="New 메리다 그래블 사일렉스" title="New 메리다 그래블 사일렉스" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000020&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 메리다 그래블 사일렉스</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000020">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000019&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000019/1000000000_main_071.jpg" width="530" alt="Classic R-21/21단 트랙바" title="Classic R-21/21단 트랙바" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000019&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">Classic R-21/21단 트랙바</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000019">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000018&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000018/1000000000_main_071.jpg" width="530" alt="New 2019 R-21/21단 트랙바" title="New 2019 R-21/21단 트랙바" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000018&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 2019 R-21/21단 트랙바</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000018">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000017&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000017/1000000000_main_071.jpg" width="530" alt="New 메리다 그래블 사일렉스" title="New 메리다 그래블 사일렉스" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000017&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 메리다 그래블 사일렉스</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000017">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000016&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000016/1000000000_main_071.jpg" width="530" alt="Classic R-21/21단 트랙바" title="Classic R-21/21단 트랙바" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000016&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">Classic R-21/21단 트랙바</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000016">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000015&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000015/1000000000_main_071.jpg" width="530" alt="New 2019 R-21/21단 트랙바" title="New 2019 R-21/21단 트랙바" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000015&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 2019 R-21/21단 트랙바</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000015">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000014&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/09/39/1000000014/1000000000_main_071.jpg" width="530" alt="New 메리다 그래블 사일렉스" title="New 메리다 그래블 사일렉스" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000014&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 메리다 그래블 사일렉스</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000014">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000013&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/08/32/1000000013/1000000000_main_071.jpg" width="530" alt="Classic R-21/21단 트랙바" title="Classic R-21/21단 트랙바" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000013&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">Classic R-21/21단 트랙바</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000013">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000012&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/08/32/1000000012/1000000000_main_071.jpg" width="530" alt="New 2019 R-21/21단 트랙바" title="New 2019 R-21/21단 트랙바" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000012&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 2019 R-21/21단 트랙바</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000012">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li class="item" style="width:33.333333333333%;">
+            <div class="item_cont">
+				<a class="item_photo_box_wrap" href="../goods/goods_view.php?goodsNo=1000000011&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En" >
+					<div class="item_photo_box" >
+
+                        <img src="/data/goods/19/08/32/1000000011/1000000000_main_071.jpg" width="530" alt="New 메리다 그래블 사일렉스" title="New 메리다 그래블 사일렉스" class="middle"  />
+
+					</div>
+				</a>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000000011&mtn=1%5E%7C%5ENEW+ITEM%5E%7C%5En">
+                            <strong class="item_name">New 메리다 그래블 사일렉스</strong>
+                            <span class="item_name_explain">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌으며, 머드가드, 각종 랙, 킥스 탠드 등을 장착할 수 있습니다.</span>
+
+							<span class="item_name_explain mo">운동, 이동, 레져 등 어디에나 적합한 모델입니다. 고품질의  경량 알루미늄으로 만들어 졌..</span>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <del>￦750,000 </del>
+                        <strong class="item_price">
+                            <span >￦650,000 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                    <div class="item_icon_box">
+
+                    </div>
+                    <!-- //item_icon_box -->
+
+					<!-- 장바구니 담기 버튼 -->
+                    <div class="item-cart-btn">
+                        <button type="button" href="#optionViewLayer" class="btn_basket_cart btn_add_cart_1 btn_open_layer" data-mode="cartIn" data-goods-no="1000000011">ADD TO CART +</button>
+                    </div>
+					<!-- //장바구니 담기 버튼 -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+    </ul>
+</div>
+<!-- //item_basket_type -->
+
+<!-- option layer -->
+<div id="optionViewLayer" class="layer_wrap dn"></div>
+<!-- //option layer -->
+<div id="addCartLayer" class="layer_wrap dn">
+    <div class="box add_cart_layer" style="position: absolute; margin: 0px; top: 279.5px; left: 651px;">
+        <div class="view">
+            <h2>장바구니 담기</h2>
+            <div class="scroll_box">
+                <p class="success"><strong>상품이 장바구니에 담겼습니다.</strong><br>바로 확인하시겠습니까?</p>
+            </div>
+            <div class="btn_box">
+                <button class="btn_cancel"><span>취소</span></button>
+                <button class="btn_confirm btn_move_cart"><span>확인</span></button>
+            </div>
+            <!-- //btn_box -->
+            <button title="닫기" class="close" type="button">닫기</button>
+        </div>
+    </div>
+</div>
+<div id="addWishLayer" class="layer_wrap dn">
+    <div class="box add_wish_layer" style="position: absolute; margin: 0px; top: 279.5px; left: 651px;">
+        <div class="view">
+            <h2>찜 리스트 담기</h2>
+            <div class="scroll_box">
+                <p class="success"><strong>상품이 찜 리스트에 담겼습니다.</strong><br>바로 확인하시겠습니까?</p>
+            </div>
+            <div class="btn_box">
+                <button class="btn_cancel"><span>취소</span></button>
+                <button class="btn_confirm btn_move_wish"><span>확인</span></button>
+            </div>
+            <!-- //btn_box -->
+            <button title="닫기" class="close layer_close" type="button">닫기</button>
+        </div>
+    </div>
+</div>
+<!-- //layer_wrap -->
+<!-- wish template -->
+<form id="frmWishTemplateView" method="post">
+    <input type="hidden" name="mode" value="wishIn">
+    <input type="hidden" name="cartMode" value="">
+    <input type="hidden" name="optionFl" value="">
+</form>
+<!-- //cart template -->
+<script type="text/javascript">
+    <!--
+    $(document).ready(function(){
+        $('.item_photo_box').on('click', '.btn_add_wish_1', function(){
+            alert("로그인하셔야 본 서비스를 이용하실 수 있습니다.");
+            document.location.href = "../member/login.php";
+            return false;
+        });
+
+        $('.item_cont').on('click', '.btn_add_cart_1', function(){
+            if($(this).data('mode') == 'cartIn') {
+                var params = {
+                    page: 'goods',
+                    type: 'goods',
+                    goodsNo: $(this).data('goods-no'),
+                    mainSno : '1',
+                };
+
+                $.ajax({
+                    method: "POST",
+                    cache: false,
+                    url: "../goods/layer_option.php",
+                    data: params,
+                    success: function (data) {
+
+                        $('#optionViewLayer').empty().append(data);
+                        $('#optionViewLayer').find('>div').center();
+                    },
+                    error: function (data) {
+                        alert(data.message);
+                    }
+                });
+            }
+        });
+
+        $('.layer-cartaddconfirm').click(function(){
+            location.href = '../order/cart.php';
+        });
+
+        $('.btn_move_cart').click(function() {
+            location.href = '../order/cart.php';
+        });
+
+        $('.btn_move_wish').click(function() {
+            location.href = '../mypage/wish_list.php';
+        });
+
+    });
+
+    function gd_goods_option_view_result(params) {
+        params += "&mode=cartIn";
+        $.ajax({
+            method: "POST",
+            cache: false,
+            url: "../order/cart_ps.php",
+            data: params,
+            success: function (data) {
+                gd_close_layer();
+                location.href="../order/cart.php";
+            },
+            error: function (data) {
+                alert(data.message);
+            }
+        });
+    }
+    //-->
+</script>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    <!--
+    var keyValue1 = '1';
+    var key1 = {
+        html: 'html' + keyValue1,
+        page: 'page' + keyValue1
+    };
+    var gdStorage1 = loadSession(key1.html);
+    var page1 = loadSession(key1.page);
+    $(document).ready(function() {
+        if (gdStorage1) {
+            $('.goods_content_1').html(gdStorage1);
+            if (page1) {
+                $('.main_wrap_1 .btn_goods_view_down_more').attr('data-page',page1);
+            }
+        }
+        $('.main_wrap_1 .btn_goods_view_down_more').on('click', function(e){
+            gd_get_list_1($(this).data('page'));
+        });
+    });
+
+    function gd_get_list_1(page) {
+        $.get('../goods/goods_main.php', {'mode' : 'get_main', 'more' : page, 'sno' : '1', 'groupSno' : ''}, function (data) {
+            $(".goods_content_1").html(data);
+            saveSession(key1.html, data);
+            if (parseInt(page) + 1 > 0) {
+                $('.main_wrap_1 .btn_goods_view_down_more').hide();
+            } else {
+                saveSession(key1.page, parseInt(page)+1);
+                $('.main_wrap_1 .btn_goods_view_down_more').data('page', parseInt(page) + 1);
+            }
+        });
+    }
+    //-->
+</script>
+
+			</div>
+		</div>
+	</div>
+	<!-- //section01 : 메인 상품 진열  -->
+
+	<!-- section02 : 메인 배너 그룹(1)-->
+	<div class="section02">
+		<div class="banner-box clearfix">
+			<div class="left-banner-box pull-left">
+				<!-- 메인 서브 배너01 -->
+				<div class="banner">
+					<a href="#" target="">
+						<div class="banner-img">
+							<img src="/data/skin/front/my10/img/banner/63fd42ed3dab5aa4b88de25dd2d1f742_98023.jpg" alt="" />
+						</div>
+						<div class="banner-txt" data-aos="fade-up">
+							<div class="txt-box">
+								<div class="inner">
+									<h3>EXPERIENCE<br/>THE ULTIMATE</h3>
+									<p>편안함과 재미, 그리고 전천후의 매력을 가진 크로스트<br/>
+									운동, 이동, 레져 등 어디에나 적합한 모델입니다.<br/>
+									고품질의 경량 알루미늄으로 만들어 졌습니다.</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- //메인 서브 배너01 -->
+			</div>
+
+			<div class="right-banner-box inline pull-left">
+				<!-- 메인 서브 배너02 -->
+				<div class="banner">
+					<a href="#" target="">
+						<div class="banner-img">
+							<img src="/data/skin/front/my10/img/banner/d00a762b8d78fb415ab1b93984eb822d_62769.jpg" alt="" />
+						</div>
+						<div class="banner-txt" data-aos="fade-right">
+							<div class="txt-box">
+								<div class="inner">
+									<h3 class="line-from-center">ROAD</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- //메인 서브 배너02 -->
+
+				<!-- 메인 서브 배너03 -->
+				<div class="banner">
+					<a href="#" target="">
+						<div class="banner-img">
+							<img src="/data/skin/front/my10/img/banner/c34ccb48d75fbdffac96ad2dbef8177b_35134.jpg" alt="" />
+						</div>
+						<div class="banner-txt" data-aos="fade-right">
+							<div class="txt-box">
+								<div class="inner">
+									<h3 class="line-from-center">MTB</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- //메인 서브 배너03 -->
+
+				<!-- 메인 서브 배너04 -->
+				<div class="banner">
+					<a href="#" target="">
+						<div class="banner-img">
+							<img src="/data/skin/front/my10/img/banner/b0f37860bcdd9c066b9dfb26d39f60ed_25034.jpg" alt="" />
+						</div>
+						<div class="banner-txt" data-aos="fade-right">
+							<div class="txt-box">
+								<div class="inner">
+									<h3 class="line-from-center">MINIVELO</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- //메인 서브 배너04 -->
+
+				<!-- 메인 서브 배너05 -->
+				<div class="banner">
+					<a href="#" target="">
+						<div class="banner-img">
+							<img src="/data/skin/front/my10/img/banner/639ac642324b6eed6ca71c6dff98ac46_82745.jpg" alt="" />
+						</div>
+						<div class="banner-txt" data-aos="fade-right">
+							<div class="txt-box">
+								<div class="inner">
+									<h3 class="line-from-center">HYBRID</h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- //메인 서브 배너05 -->
+			</div>
+		</div>
+	</div>
+	<!-- //section02 : 메인 배너 그룹(1) -->
+
+	<!-- section03 : 메인 게시판 노출 -->
+	<div class="section03">
+		<div class="main-title-wrap">
+			<h3>BEST ITEM</h3>
+		</div>
+		<div class="main-board-wrap clearfix">
+			<div class="left-section pull-left">
+				<div class="section-inner bounce-up">
+					<div class="banner-img ">
+<img src="/data/skin/front/my10/img/banner/43f773ad70af42f15f1fc676e54bd6b8_43346.jpg"  alt="게시판 좌측 배너" title="게시판 좌측 배너"   />					</div>
+					<div class="banner-txt">
+						<h3>EXPERIENCE<br/>ULTIMATE</h3>
+						<p>편안함과 재미, 그리고 전천후의 매력을 가진 크로스트 <br/>운동,이동,레져 등 어디에나 적합한 모델입니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="right-section pull-right">
+				<div class="section-inner post-list-wrap">
+
+					<ul id="grid-post" class="inline">
+						<li class="list easing-one bounce-up">
+							<div class="box">
+								<a href="/board/view.php?bdId=maingall&sno=6">
+									<span class="thumb"><img src="/data/board/upload/maingall/t/b2e300907c60422b" width="100%"></span>
+								</a>
+								<div class="detail">
+									<div class="content-box">
+										<a href="/board/view.php?bdId=&sno=6" class="subject text-one-line">게시글과 상품을 연동합니다</a>
+										<p class="content-caption">
+											게시글을 작성하고 상품에만 연결하면 끝 상품이 자동으로 노출됩니다. 낮은 가격보다 다양한 볼거리에 열광하는 현대인의 소비습관을 고려한 스킨
+										</p>
+									</div>
+
+									<div class="goods-box">
+										<a href="/goods/goods_view.php?goodsNo=1000000014" class="clearfix">
+											<div class="goods-thumb pull-left">
+												<img src="/data/goods/19/09/39/1000000014/1000000000_main_071.jpg">
+											</div>
+											<div class="goods-des pull-left">
+												<div class="des-inn">
+													<p class="goods-name">New 메리다 그래블 사일렉스</p>
+													<p class="goods-price">￦650,000</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="list easing-one bounce-up">
+							<div class="box">
+								<a href="/board/view.php?bdId=maingall&sno=5">
+									<span class="thumb"><img src="/data/board/upload/maingall/t/50da76f4ccf1e6ac" width="100%"></span>
+								</a>
+								<div class="detail">
+									<div class="content-box">
+										<a href="/board/view.php?bdId=&sno=5" class="subject text-one-line">가을의 클라이맥스 세일</a>
+										<p class="content-caption">
+											MERCI가 준비한 50% 세일상품으로 기분전환 하세요!베스트 아이템 총 출동한 이번 가을세일에서 득템기회를 놓치지마세요!
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="list easing-one bounce-up">
+							<div class="box">
+								<a href="/board/view.php?bdId=maingall&sno=4">
+									<span class="thumb"><img src="/data/board/upload/maingall/t/29f33ebff951c2c0" width="100%"></span>
+								</a>
+								<div class="detail">
+									<div class="content-box">
+										<a href="/board/view.php?bdId=&sno=4" class="subject text-one-line">짜릿한 그날의 기억</a>
+										<p class="content-caption">
+											게시글을 작성하고 상품에만 연결하면 끝 상품이 자동으로 노출됩니다. 낮은 가격보다 다양한 볼거리에 열광하는 현대인의 소비습관을 고려한 스킨 게시글을 작성하고 상품에만 연결하면 끝 ...
+										</p>
+									</div>
+
+									<div class="goods-box">
+										<a href="/goods/goods_view.php?goodsNo=1000000010" class="clearfix">
+											<div class="goods-thumb pull-left">
+												<img src="/data/goods/19/08/32/1000000010/1000000000_main_071.jpg">
+											</div>
+											<div class="goods-des pull-left">
+												<div class="des-inn">
+													<p class="goods-name">Classic R-21/21단 트랙바</p>
+													<p class="goods-price">￦650,000</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="list easing-one bounce-up">
+							<div class="box">
+								<a href="/board/view.php?bdId=maingall&sno=3">
+									<span class="thumb"><img src="/data/board/upload/maingall/t/9a75b62149a18131" width="100%"></span>
+								</a>
+								<div class="detail">
+									<div class="content-box">
+										<a href="/board/view.php?bdId=&sno=3" class="subject text-one-line">편안한 안장에 안장!</a>
+										<p class="content-caption">
+											누가 앉아도 압박을 획기적으로 줄여줍니다. 일반 자전거에 모두 호환 가능한 안장으로 편안한 라이딩을 경험해보세요!
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="list easing-one bounce-up">
+							<div class="box">
+								<a href="/board/view.php?bdId=maingall&sno=2">
+									<span class="thumb"><img src="/data/board/upload/maingall/t/02c0a5e692df0200" width="100%"></span>
+								</a>
+								<div class="detail">
+									<div class="content-box">
+										<a href="/board/view.php?bdId=&sno=2" class="subject text-one-line">하늘을 나는 상상</a>
+										<p class="content-caption">
+											방학 없는 직장인들에게 단비 같은 여름 휴가. 해외여행은 준비해야할게 많고 집에서만 보내자니 어딘가 아쉬웠다면 이번 여름은 바이크 어떤가요? 휴양지에서 입기 좋은 스윔웨어부터 여행...
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="list easing-one bounce-up">
+							<div class="box">
+								<a href="/board/view.php?bdId=maingall&sno=1">
+									<span class="thumb"><img src="/data/board/upload/maingall/t/d9867ca5e3fbfb88" width="100%"></span>
+								</a>
+								<div class="detail">
+									<div class="content-box">
+										<a href="/board/view.php?bdId=&sno=1" class="subject text-one-line">가을의 클라이맥스 세일</a>
+										<p class="content-caption">
+											MERCI가 준비한 50% 세일상품으로 기분전환 하세요!베스트 아이템 총 출동한 이번 가을세일에서 득템기회를 놓치지마세요!
+										</p>
+									</div>
+
+									<div class="goods-box">
+										<a href="/goods/goods_view.php?goodsNo=1000000013" class="clearfix">
+											<div class="goods-thumb pull-left">
+												<img src="/data/goods/19/08/32/1000000013/1000000000_main_071.jpg">
+											</div>
+											<div class="goods-des pull-left">
+												<div class="des-inn">
+													<p class="goods-name">Classic R-21/21단 트랙바</p>
+													<p class="goods-price">￦650,000</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<div class="more-btn">
+						<a href="/board/list.php?&bdId=maingall">MORE VIEW +</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //section03 : 메인 게시판 노출 -->
+
+	<!-- section04 : 메인 흐르는 문구 -->
+	<div class="section04">
+		<div id="marquee">
+            <p>OUR STORY <span>OUR STORY</span> OUR STORY <span>OUR STORY</span> OUR STORY</p>
+		</div>
+	</div>
+	<!-- section04 : 메인 흐르는 문구 -->
+
+	<!-- section05 : 메인 동영상 노출 -->
+	<div class="section05 main-lr">
+        <div class="video-wrap">
+			<div class="tab-wrap clearfix">
+				<div class="tab-body pull-left">
+					<div>
+						<div class="video-url">
+							<iframe src="https://www.youtube.com/embed/Rf1GX_TfIJk?rel=0&amp;showinfo=0&amp;autohide=1&amp;autoplay=0&amp;iv_load_policy=3&amp;controls=1&amp;loop=1&amp;playlist=Rf1GX_TfIJk" frameborder="0" allowfullscreen=""></iframe>
+						</div>
+					</div>
+					<div class="on">
+						<div class="video-url">
+							<iframe src="https://www.youtube.com/embed/iZBvmhPUEBA?rel=0&amp;showinfo=0&amp;autohide=1&amp;autoplay=0&amp;iv_load_policy=3&amp;controls=1&amp;loop=1&amp;playlist=iZBvmhPUEBA" frameborder="0" allowfullscreen=""></iframe>
+						</div>
+					</div>
+					<div>
+						<div class="video-url">
+							<iframe src="https://www.youtube.com/embed/rhGz1szjK5c?rel=0&amp;showinfo=0&amp;autohide=1&amp;autoplay=0&amp;iv_load_policy=3&amp;controls=1&amp;loop=1&amp;playlist=rhGz1szjK5c" frameborder="0" allowfullscreen=""></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-hd-wrap pull-right">
+					<div>
+						<img src="/data/skin/front/my10/img/banner/0fa2dde35c1a2da633a7544512cb4284_11413.jpg" alt="" />
+						<div class="text">
+							<h3>#02</h3>
+							<p>강력한 퍼포먼스로 압도하다.</p>
+						</div>
+					</div>
+
+					<div class="on">
+						<img src="/data/skin/front/my10/img/banner/d00a762b8d78fb415ab1b93984eb822d_53244.jpg" alt="" />
+						<div class="text">
+							<h3>#01</h3>
+							<p>ALL ABOUT OUR LIFE</p>
+						</div>
+					</div>
+
+					<div>
+						<img src="/data/skin/front/my10/img/banner/c9febb1c2248b5b4e41de3f729961b9b_81321.jpg" alt="" />
+						<div class="text">
+							<h3>#03</h3>
+							<p>CROSSWAY 강력한 퍼포먼스</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 비디오영역 끝 -->
+	</div>
+	<!-- //section05 : 메인 동영상 노출 -->
+
+
+	<!-- section06 : 메인 배너그룹(2) -->
+	<div class="section06">
+		<div class="banner-box clearfix">
+			<div class="pull-left">
+				<!-- 메인 서브 배너06 -->
+				<div class="banner">
+					<a href="#" target="">
+						<div class="banner-img">
+							<img src="/data/skin/front/my10/img/banner/2ea971da8478dc61a58b4d8fed6af601_40088.jpg" alt="" />
+						</div>
+						<div class="banner-txt">
+							<div class="txt-box">
+								<div class="inner">
+									<p class="tit-1" data-aos="fade-left">DON’T STOP</p>
+									<p class="tit-2" data-aos="fade-right">달리는 순간의 기억</p>
+									<p class="tit-3" data-aos="fade-left">엄청나게 빠르고 인상적인 프레임과 힘</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- //메인 배너그룹02 -->
+			</div>
+			<div class="pull-right">
+				<!-- 메인 서브 배너06 -->
+				<div class="banner">
+					<a href="#" target="">
+						<div class="banner-img">
+							<img src="/data/skin/front/my10/img/banner/f90aba8be310e40f5a83ea7d759be456_16080.jpg" alt="" />
+						</div>
+						<div class="banner-txt">
+							<div class="txt-box">
+								<div class="inner">
+									<p class="tit-1" data-aos="fade-left">UNLIMITIED</p>
+									<p class="tit-2" data-aos="fade-right">초경량 레이스 머신</p>
+									<p class="tit-3" data-aos="fade-left">엄청나게 빠르고 인상적인 프레임과 힘</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- //메인 배너그룹02 -->
+			</div>
+		</div>
+	</div>
+	<!-- //section06 : 메인 서브 배너영역(2) -->
+
+
+	<!-- section07 : MEMBERSHIP -->
+	<div class="section07 main-lr">
+		<div class="main-title-wrap">
+			<h3>MEMBERSHIP</h3>
+		</div>
+		<div class="membership-wrap">
+			<ul class="inline">
+				<!-- membership 01-->
+				<li>
+					<a href="#">
+						<div class="icon easing-three">
+							<img data-aos="zoom-in" src="/data/skin/front/my10/wib/img/main/membership-icon01.png" alt="" />
+						</div>
+						<div class="txt easing-three" data-aos="zoom-out">
+							<p class="main-tit">무료배송</p>
+							<p class="sub-tit">품질에 자신 있는 만큼!<br/>
+							평생 무상 A/S서비스를 제공합니다.</p>
+						</div>
+					</a>
+				</li>
+				<!-- membership 02-->
+				<li>
+					<a href="#">
+						<div class="icon easing-three">
+							<img data-aos="zoom-in" src="/data/skin/front/my10/wib/img/main/membership-icon02.png" alt="" />
+						</div>
+						<div class="txt easing-three" data-aos="zoom-out">
+							<p class="main-tit">쿠폰증정</p>
+							<p class="sub-tit">품질에 자신 있는 만큼!<br/>
+							평생 무상 A/S서비스를 제공합니다.</p>
+						</div>
+					</a>
+				</li>
+				<!-- membership 03-->
+				<li>
+					<a href="#">
+						<div class="icon easing-three">
+							<img data-aos="zoom-in" src="/data/skin/front/my10/wib/img/main/membership-icon03.png" alt="" />
+						</div>
+						<div class="txt easing-three" data-aos="zoom-out">
+							<p class="main-tit">평생 무상A/S</p>
+							<p class="sub-tit">품질에 자신 있는 만큼!<br/>
+							평생 무상 A/S서비스를 제공합니다.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //section07 : MEMBERSHIP -->
+</div> <!-- // .main_content -->
+
+            </div>
+            <!-- //sub_content -->
+        </div>
+        <!-- //본문 끝 contents -->
+    </div>
+    <!-- //container -->
+
+    <div id="footer_wrap">
+<div class="footer-top-wrap">
+    <div class="clearfix cut-lr">
+        <!-- 고객센터 영역 -->
+        <div class="footer-top-box cs-center pull-left">
+            <div class="title">
+                <h3>Customer center</h3>
+            </div>
+            <div class="cs-tell">
+                <h2>1566-6681</h2>
+            </div>
+            <div class="cs-info">
+                <p>상담시간 09:00 ~ 18:00<br />
+점심시간 12:00 ~ 13:00<br />
+토/일/공휴일 휴무</p>
+            </div>
+        </div>
+        <!--// 고객센터 영역 -->
+        <!-- 교환반품 영역 -->
+        <div class="footer-top-box return-info pull-left">
+            <div class="title">
+                <h3>Returns & Exchange</h3>
+            </div>
+            <div class="footer-info-list">
+				<p>반품주소</p>
+				<p>서울특별시 금천구  디지털로9길 68</p>
+				<p><a href="#" target="_blank">배송조회 &gt;</a></p>
+            </div>
+        </div>
+        <!--// 교환반품 영역 -->
+        <!-- 계좌정보 영역 -->
+        <div class="footer-top-box bank-info pull-left">
+            <div class="title">
+                <h3>Bank info</h3>
+            </div>
+            <div class="footer-info-list">
+				<p>  </p>
+            </div>
+        </div>
+        <!--// 계좌정보 영역 -->
+        <!-- 퀵메뉴 영역 -->
+        <div class="footer-top-box quick-menu pull-left">
+            <div class="title">
+                <h3>About</h3>
+            </div>
+            <div class="quick-menu-list">
+                <li><a class="easing-three" href="../service/company.php">회사소개</a></li>
+				<li><a class="easing-three" href="../service/agreement.php">이용약관</a></li>
+				<li><a class="easing-three" href="../service/guide.php">이용안내</a></li>
+				<li><a class="easing-three" href="../service/private.php">개인정보처리방침</a></li>
+            </div>
+        </div>
+        <!-- 퀵메뉴 영역 -->
+    </div>
+</div>
+
+<div class="footer-bottom-wrap">
+	<div class="cut-lr">
+		<!-- SNS 링크 영역 -->
+		<div class="footer-sns">
+			<ul class="inline">
+				<li><a href="https://ko-kr.facebook.com/" target="_blank"><img src="/data/skin/front/my10/wib/img/common/f-facebook-icon.png" alt="facebook"></a></li>
+				<li><a href="https://story.kakao.com/s/login" target="_blank"><img src="/data/skin/front/my10/wib/img/common/f-kakao-icon.png" alt="kakao"></a></li>
+				<li><a href="https://www.instagram.com/" target="_blank"><img src="/data/skin/front/my10/wib/img/common/f-instagram-icon.png" alt="instagram"></a></li>
+			</ul>
+		</div>
+		<!-- //SNS 링크 영역 -->
+
+		<!-- 상점정보 노출 영역  -->
+		<div class="footer-info-list">
+			<ul class="inline">
+				<li>상호명 : 디자인위브</li>
+				<li>대표 : 이선화</li>
+				<li>주소 : 서울특별시 금천구  디지털로9길 68 803호</li>
+				<li class="clearfix">사업자등록번호 : 119-86-36596 <a href="#" class="btn_licensee_info" onclick="gd_popup_bizInfo('1198636596'); return false;">[사업자정보확인]</a></li>
+				<br/>
+				<li>통신판매업신고 : 2011-서울금천-0382</li>
+				<li>개인정보보호책임자 : </li>
+				<li>E-MAIL : <span onclick="popup_email('help@designwib.co.kr');">help@designwib.co.kr</li>
+				<li>고객센터 : 1566-6681</li>
+			</ul>
+		</div>
+		<!-- //상점정보 노출 영역  -->
+
+		<div class="footer-copyright pull-left">
+			<p>(c) 2019 디자인위브. Hosting by godo. Design by Designwib.</p>
+		</div>
+
+		<div class="foot_certify">
+			<span></span>
+			<span></span>
+		</div>
+		<!-- //foot_certify -->
+	</div>
+</div>
+
+
+<!-- top scroll -->
+<a href="#top" class="go-top">
+    <img src="/data/skin/front/my10/wib/img/common/top-scroll-icon.png" />
+</a>
+<!-- //top scroll -->
+    </div>
+    <!-- //footer_wrap -->
+
+
+    <div class="scroll_wrap">
+
+        <!-- 좌측 스크롤 배너 -->
+        <div id="scroll_left">
+
+        </div>
+        <!-- //scroll_left -->
+        <!-- //좌측 스크롤 배너 -->
+
+
+        <!-- 우측 스크롤 배너 -->
+        <div id="scroll_right">
+<div class="right_banner">
+</div>
+<div class="scroll_right_cont">
+    <h4>TODAY VIEW</h4>
+
+    <div class="scr_paging">
+        <button type="button" class="bnt_scroll_prev" title="최근본 이전 상품"><img src="/data/skin/front/my10/img/common/btn/btn_scroll_prev.png" alt="최근본 이전 상품"></button>
+        <span><strong class="js_current">0</strong>/<span class="js_total" style="float:none;width:auto;">2</span></span>
+        <button type="button" class="bnt_scroll_next" title="최근본 다음 상품"><img src="/data/skin/front/my10/img/common/btn/btn_scroll_next.png" alt="최근본 다음 상품"></button>
+    </div>
+    <!-- //scr_paging -->
+</div>
+<span class="btn_scroll_top"><a href="#TOP"><img src="/data/skin/front/my10/img/common/btn/btn_scroll_top.png" alt="상단으로 이동"/></a></span>
+
+<script type="text/javascript">
+    // DOM 로드
+    $(function () {
+        $('.scroll_right_cont').todayGoods();
+    });
+
+    // 최근본상품 리스트 페이징 처리 플러그인
+    $.fn.todayGoods = function () {
+        // 기본값 세팅
+        var self = $(this);
+        var setting = {
+            page: 1,
+            total: 0,
+            rowno: 5
+        };
+        var element = {
+            goodsList: self.find('ul > li'),
+            closeButton: self.find('ul > li > button'),
+            prev: self.find('.scr_paging > .bnt_scroll_prev'),
+            next: self.find('.scr_paging > .bnt_scroll_next'),
+            paging: self.find('.scr_paging')
+        };
+
+        // 페이지 갯수 설정
+        setting.total = Math.ceil(element.goodsList.length / setting.rowno);
+
+        // 화면 초기화 및 갱신 (페이지 및 갯수 표기)
+        var init = function () {
+            if (setting.total == 0) {
+                setting.page = 0;
+                element.paging.hide();
+            }
+            self.find('ul').hide().eq(setting.page - 1).show();
+            self.find('.scr_paging .js_current').text(setting.page);
+            self.find('.scr_paging .js_total').text(setting.total);
+        }
+
+        // 삭제버튼 클릭
+        element.closeButton.click(function(e){
+            $.post('../goods/goods_ps.php', {
+                'mode': 'delete_today_goods',
+                'goodsNo': $(this).data('goods-no')
+            }, function (data, status) {
+                // 값이 없는 경우 성공
+                if (status == 'success' && data == '') {
+                    location.reload(true);
+                }
+                else {
+                    console.log('request fail. ajax status (' + status + ')');
+                }
+            });
+        });
+
+        // 이전버튼 클릭
+        element.prev.click(function (e) {
+            setting.page = 1 == setting.page ? setting.total : setting.page - 1;
+            init();
+        });
+
+        // 다음버튼 클릭
+        element.next.click(function (e) {
+            setting.page = setting.total == setting.page ? 1 : setting.page + 1;
+            init();
+        });
+
+        // 화면 초기화
+        init();
+    };
+</script>
+        </div>
+        <!-- //scroll_right -->
+        <!-- //우측 스크롤 배너 -->
+
+
+    </div>
+    <!-- //scroll_wrap -->
+
+
+    <!-- 퀵 검색 폼 -->
+    <!-- 퀵 검색 폼 -->
+
+</div>
+<!-- //wrap -->
+
+<!-- 쇼핑 카트 탭 -->
+
+<!-- //쇼핑 카트 탭 -->
+
+<!-- 절대! 지우지마세요 : Start -->
+<div id="layerDim" class="dn">&nbsp;</div>
+<iframe name="ifrmProcess" src='/blank.php' style="display:none" width="100%" height="0" bgcolor="#000"></iframe>
+<!-- 절대! 지우지마세요 : End -->
+
+<!-- 외부 스크립트 -->
+
+
+</body>
+</html>
